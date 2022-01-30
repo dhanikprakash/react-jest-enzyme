@@ -1,5 +1,5 @@
 
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import App from './App';
 
 
@@ -15,11 +15,11 @@ afterEach(()=>{
 
 describe("Counter Testing", () =>{
   test('renders learn react link', () => {
-    
     expect(wrapper.find('h2').text()).toBe('Counter App');
   });
 
   test('render increment', ()=>{
+    debugger;
     expect(wrapper.find('#increment-button').at(0).text()).toBe('Increment');
   })
 
